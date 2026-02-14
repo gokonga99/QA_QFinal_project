@@ -1,0 +1,15 @@
+<suite name="AutomationExercise Suite" parallel="classes" thread-count="3">
+
+    <test name="UI Tests">
+        <packages>
+            <package name="ui.tests"/>
+        </packages>
+    </test>
+
+    <test name="API Tests">
+        <packages>
+            <package name="api.tests"/>
+        </packages>
+    </test>
+
+</suite>

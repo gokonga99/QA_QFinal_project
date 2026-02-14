@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="20" passed="16" failed="4" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-02-14T07:33:02 GET" name="Surefire suite" finished-at="2026-02-14T07:34:56 GET" duration-ms="114078">
+    <groups>
+    </groups>
+    <test started-at="2026-02-14T07:33:02 GET" name="Surefire test" finished-at="2026-02-14T07:34:56 GET" duration-ms="114078">
+      <class name="api.tests.DeleteUserTest">
+        <test-method signature="deleteUserAPI()[pri:0, instance:api.tests.DeleteUserTest@41e1e210]" started-at="2026-02-14T07:34:55 GET" name="deleteUserAPI" description="Verify a user can be deleted via API" finished-at="2026-02-14T07:34:55 GET" duration-ms="553" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteUserAPI -->
+      </class> <!-- api.tests.DeleteUserTest -->
+      <class name="api.tests.ProductBrandListTest">
+        <test-method signature="getProductBrandListTest()[pri:0, instance:api.tests.ProductBrandListTest@2bfc268b]" started-at="2026-02-14T07:34:53 GET" name="getProductBrandListTest" finished-at="2026-02-14T07:34:54 GET" duration-ms="494" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getProductBrandListTest -->
+        <test-method signature="putProductBrandListTest()[pri:0, instance:api.tests.ProductBrandListTest@2bfc268b]" started-at="2026-02-14T07:34:54 GET" name="putProductBrandListTest" finished-at="2026-02-14T07:34:54 GET" duration-ms="269" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- putProductBrandListTest -->
+      </class> <!-- api.tests.ProductBrandListTest -->
+      <class name="ui.tests.RegWithExistingMailTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:ui.tests.RegWithExistingMailTest@e7edb54]" started-at="2026-02-14T07:34:15 GET" name="setUp" finished-at="2026-02-14T07:34:20 GET" duration-ms="5034" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="regWithExistingMail()[pri:0, instance:ui.tests.RegWithExistingMailTest@e7edb54]" started-at="2026-02-14T07:34:20 GET" name="regWithExistingMail" description="verify that a proper error message is displayed when registering with an existing mail" finished-at="2026-02-14T07:34:25 GET" duration-ms="4576" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- regWithExistingMail -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ui.tests.RegWithExistingMailTest@e7edb54]" started-at="2026-02-14T07:34:25 GET" name="tearDown" finished-at="2026-02-14T07:34:25 GET" duration-ms="75" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- ui.tests.RegWithExistingMailTest -->
+      <class name="ui.tests.IncorrectLoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:ui.tests.IncorrectLoginTest@2cd2a21f]" started-at="2026-02-14T07:33:45 GET" name="setUp" finished-at="2026-02-14T07:33:49 GET" duration-ms="4652" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginFailTest()[pri:0, instance:ui.tests.IncorrectLoginTest@2cd2a21f]" started-at="2026-02-14T07:33:49 GET" name="loginFailTest" description="verify user can&#039;t login with incorrect credentials" finished-at="2026-02-14T07:33:52 GET" duration-ms="3120" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginFailTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ui.tests.IncorrectLoginTest@2cd2a21f]" started-at="2026-02-14T07:33:52 GET" name="tearDown" finished-at="2026-02-14T07:33:53 GET" duration-ms="67" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- ui.tests.IncorrectLoginTest -->
+      <class name="ui.tests.TestCasesPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:ui.tests.TestCasesPageTest@74455848]" started-at="2026-02-14T07:33:59 GET" name="setUp" finished-at="2026-02-14T07:34:04 GET" duration-ms="4509" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="goToTestCasePage()[pri:0, instance:ui.tests.TestCasesPageTest@74455848]" started-at="2026-02-14T07:34:04 GET" name="goToTestCasePage" description="verify Test Cases page is shown after clicking an appropriate button" finished-at="2026-02-14T07:34:15 GET" duration-ms="11128" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //h2[normalize-space()='Test Cases'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.14.0-37-generic', java.version: '11.0.29'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.107, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:43113}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:43113/devtoo..., se:cdpVersion: 141.0.7390.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: eb5337698ba238cf31c337985ff60400]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //h2[normalize-space()='Test Cases'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.14.0-37-generic', java.version: '11.0.29'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.107, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:43113}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:43113/devtoo..., se:cdpVersion: 141.0.7390.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: eb5337698ba238cf31c337985ff60400
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at ui.base.BasePage.waitForVisible(BasePage.java:29)
+at ui.pages.TestCasePage.isTestCasesHeaderDisplayed(TestCasePage.java:11)
+at ui.tests.TestCasesPageTest.goToTestCasePage(TestCasesPageTest.java:18)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:115)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:204)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:107)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:112)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToTestCasePage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ui.tests.TestCasesPageTest@74455848]" started-at="2026-02-14T07:34:15 GET" name="tearDown" finished-at="2026-02-14T07:34:15 GET" duration-ms="71" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- ui.tests.TestCasesPageTest -->
+      <class name="api.tests.LoginUserTest">
+        <test-method signature="loginUserTest()[pri:0, instance:api.tests.LoginUserTest@be35cd9]" started-at="2026-02-14T07:34:55 GET" name="loginUserTest" finished-at="2026-02-14T07:34:56 GET" duration-ms="533" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginUserTest -->
+        <test-method signature="loginUserWithInvalidEmailTest()[pri:0, instance:api.tests.LoginUserTest@be35cd9]" started-at="2026-02-14T07:34:56 GET" name="loginUserWithInvalidEmailTest" finished-at="2026-02-14T07:34:56 GET" duration-ms="262" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginUserWithInvalidEmailTest -->
+      </class> <!-- api.tests.LoginUserTest -->
+      <class name="ui.tests.LoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:ui.tests.LoginTest@62230c58]" started-at="2026-02-14T07:33:24 GET" name="setUp" finished-at="2026-02-14T07:33:29 GET" duration-ms="4534" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginUser()[pri:0, instance:ui.tests.LoginTest@62230c58]" started-at="2026-02-14T07:33:29 GET" name="loginUser" description="verify user can Login with his credentials" finished-at="2026-02-14T07:33:44 GET" duration-ms="15811" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //h2[contains(normalize-space(),'Account Deleted!')] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.14.0-37-generic', java.version: '11.0.29'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.107, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:44933}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:44933/devtoo..., se:cdpVersion: 141.0.7390.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 82698a7f903a554045bf0b0b374310bf]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //h2[contains(normalize-space(),'Account Deleted!')] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.14.0-37-generic', java.version: '11.0.29'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.107, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:44933}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:44933/devtoo..., se:cdpVersion: 141.0.7390.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 82698a7f903a554045bf0b0b374310bf
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at ui.base.BasePage.waitForVisible(BasePage.java:29)
+at ui.pages.HomePage.isAccountDeletedVisible(HomePage.java:58)
+at ui.tests.LoginTest.loginUser(LoginTest.java:33)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:115)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:204)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:107)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:112)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginUser -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ui.tests.LoginTest@62230c58]" started-at="2026-02-14T07:33:45 GET" name="tearDown" finished-at="2026-02-14T07:33:45 GET" duration-ms="73" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- ui.tests.LoginTest -->
+      <class name="api.tests.RegisterUserTest">
+        <test-method signature="registerUserAPI()[pri:0, instance:api.tests.RegisterUserTest@2f8dad04]" started-at="2026-02-14T07:34:54 GET" name="registerUserAPI" description="Verify a user can register via API" finished-at="2026-02-14T07:34:54 GET" duration-ms="285" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerUserAPI -->
+      </class> <!-- api.tests.RegisterUserTest -->
+      <class name="ui.tests.ViewProductTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:ui.tests.ViewProductTest@378542de]" started-at="2026-02-14T07:34:25 GET" name="setUp" finished-at="2026-02-14T07:34:29 GET" duration-ms="4449" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="viewProduct()[pri:0, instance:ui.tests.ViewProductTest@378542de]" started-at="2026-02-14T07:34:29 GET" name="viewProduct" description="verify navigation to the product page, verify that first products details are displayed" finished-at="2026-02-14T07:34:40 GET" duration-ms="11168" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //h2[normalize-space()='All Products'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.14.0-37-generic', java.version: '11.0.29'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.107, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:37353}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:37353/devtoo..., se:cdpVersion: 141.0.7390.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 526a0e82a7cbda4649154ff4104b0b76]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //h2[normalize-space()='All Products'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.14.0-37-generic', java.version: '11.0.29'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.107, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:37353}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:37353/devtoo..., se:cdpVersion: 141.0.7390.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 526a0e82a7cbda4649154ff4104b0b76
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at ui.base.BasePage.waitForVisible(BasePage.java:29)
+at ui.pages.ProductPage.isProductPageDisplayed(ProductPage.java:26)
+at ui.tests.ViewProductTest.viewProduct(ViewProductTest.java:18)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:115)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:204)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:107)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:112)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- viewProduct -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ui.tests.ViewProductTest@378542de]" started-at="2026-02-14T07:34:41 GET" name="tearDown" finished-at="2026-02-14T07:34:41 GET" duration-ms="70" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- ui.tests.ViewProductTest -->
+      <class name="api.tests.SearchProductsTest">
+        <test-method signature="searchProductsTest()[pri:0, instance:api.tests.SearchProductsTest@53976f5c]" started-at="2026-02-14T07:34:52 GET" name="searchProductsTest" finished-at="2026-02-14T07:34:53 GET" duration-ms="651" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchProductsTest -->
+        <test-method signature="searchProductsTest2()[pri:0, instance:api.tests.SearchProductsTest@53976f5c]" started-at="2026-02-14T07:34:53 GET" name="searchProductsTest2" finished-at="2026-02-14T07:34:53 GET" duration-ms="278" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchProductsTest2 -->
+      </class> <!-- api.tests.SearchProductsTest -->
+      <class name="ui.tests.SubscriptionCartTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:ui.tests.SubscriptionCartTest@69e1dd28]" started-at="2026-02-14T07:34:47 GET" name="setUp" finished-at="2026-02-14T07:34:49 GET" duration-ms="2027" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySubscriptionInCartPage()[pri:0, instance:ui.tests.SubscriptionCartTest@69e1dd28]" started-at="2026-02-14T07:34:49 GET" name="verifySubscriptionInCartPage" description="Verify subscription functionality in Cart page" finished-at="2026-02-14T07:34:52 GET" duration-ms="3172" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySubscriptionInCartPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ui.tests.SubscriptionCartTest@69e1dd28]" started-at="2026-02-14T07:34:52 GET" name="tearDown" finished-at="2026-02-14T07:34:52 GET" duration-ms="70" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- ui.tests.SubscriptionCartTest -->
+      <class name="ui.tests.SubscriptionHomeTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:ui.tests.SubscriptionHomeTest@3738449f]" started-at="2026-02-14T07:34:41 GET" name="setUp" finished-at="2026-02-14T07:34:46 GET" duration-ms="4907" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySubscription()[pri:0, instance:ui.tests.SubscriptionHomeTest@3738449f]" started-at="2026-02-14T07:34:46 GET" name="verifySubscription" description="verify that the user is Subscribed" finished-at="2026-02-14T07:34:47 GET" duration-ms="1118" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySubscription -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ui.tests.SubscriptionHomeTest@3738449f]" started-at="2026-02-14T07:34:47 GET" name="tearDown" finished-at="2026-02-14T07:34:47 GET" duration-ms="70" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- ui.tests.SubscriptionHomeTest -->
+      <class name="ui.tests.ProductSearchTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:ui.tests.ProductSearchTest@2e55dd0c]" started-at="2026-02-14T07:33:53 GET" name="setUp" finished-at="2026-02-14T07:33:55 GET" duration-ms="2051" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="productSearch()[pri:0, instance:ui.tests.ProductSearchTest@2e55dd0c]" started-at="2026-02-14T07:33:55 GET" name="productSearch" description="verify that the searched product shows up" finished-at="2026-02-14T07:33:59 GET" duration-ms="4470" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productSearch -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ui.tests.ProductSearchTest@2e55dd0c]" started-at="2026-02-14T07:33:59 GET" name="tearDown" finished-at="2026-02-14T07:33:59 GET" duration-ms="91" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- ui.tests.ProductSearchTest -->
+      <class name="ui.tests.LogoutUserTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:ui.tests.LogoutUserTest@3d1cfad4]" started-at="2026-02-14T07:33:12 GET" name="setUp" finished-at="2026-02-14T07:33:16 GET" duration-ms="4237" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="logoutUser()[pri:0, instance:ui.tests.LogoutUserTest@3d1cfad4]" started-at="2026-02-14T07:33:16 GET" name="logoutUser" description="logout an user after successful login attempt" finished-at="2026-02-14T07:33:24 GET" duration-ms="7970" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutUser -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ui.tests.LogoutUserTest@3d1cfad4]" started-at="2026-02-14T07:33:24 GET" name="tearDown" finished-at="2026-02-14T07:33:24 GET" duration-ms="93" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- ui.tests.LogoutUserTest -->
+      <class name="ui.tests.RegisterTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:ui.tests.RegisterTest@5136d012]" started-at="2026-02-14T07:33:02 GET" name="setUp" finished-at="2026-02-14T07:33:07 GET" duration-ms="5259" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="registerUser()[pri:0, instance:ui.tests.RegisterTest@5136d012]" started-at="2026-02-14T07:33:07 GET" name="registerUser" description="Verify user can Signup with valid credentials" finished-at="2026-02-14T07:33:11 GET" duration-ms="3967" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <button type="submit" data-qa="signup-button" class="btn btn-default">...</button> is not clickable at point (926, 420). Other element would receive the click: <iframe id="aswift_2" name="aswift_2" style="min-height: auto !important; max-height: none !important; min-width: auto !important; max-width: none !important; width: 100vw !important; height: 100vh !important; inset: 0px auto auto 0px !important; position: absolute !important; clear: none !important; display: inline !important; float: none !important; margin: 0px !important; opacity: 1 !important; overflow: visible !important; padding: 0px !important; vertical-align: baseline !important; visibility: visible !important; z-index: auto !important;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="" height="" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="https://googleads.g.doubleclick.net/pagead/html/r20260211/r20190131/zrt_lookup_fy2021.html#RS-0-&amp;adk=1812271808&amp;client=ca-pub-1677597403311019&amp;fa=8&amp;ifi=3&amp;uci=a!3" data-google-container-id="a!3" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CJK9o4uG2JIDFUWK_Qcd7koBAA" data-load-complete="true"></iframe>
+  (Session info: chrome=141.0.7390.107)
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.14.0-37-generic', java.version: '11.0.29'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9ac92f90f6ba8cf3abba17e397947787, clickElement {id=f.17905D8675D3C25B355C3D9909E67363.d.4C9B170C2DAE333FB5AC137B480777EF.e.57}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.107, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:35993}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:35993/devtoo..., se:cdpVersion: 141.0.7390.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (9ac92f90f6ba8cf3abba17e397947787)] -> xpath: //button[text()='Signup']]
+Session ID: 9ac92f90f6ba8cf3abba17e397947787]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button type="submit" data-qa="signup-button" class="btn btn-default">...</button> is not clickable at point (926, 420). Other element would receive the click: <iframe id="aswift_2" name="aswift_2" style="min-height: auto !important; max-height: none !important; min-width: auto !important; max-width: none !important; width: 100vw !important; height: 100vh !important; inset: 0px auto auto 0px !important; position: absolute !important; clear: none !important; display: inline !important; float: none !important; margin: 0px !important; opacity: 1 !important; overflow: visible !important; padding: 0px !important; vertical-align: baseline !important; visibility: visible !important; z-index: auto !important;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="" height="" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="https://googleads.g.doubleclick.net/pagead/html/r20260211/r20190131/zrt_lookup_fy2021.html#RS-0-&amp;adk=1812271808&amp;client=ca-pub-1677597403311019&amp;fa=8&amp;ifi=3&amp;uci=a!3" data-google-container-id="a!3" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CJK9o4uG2JIDFUWK_Qcd7koBAA" data-load-complete="true"></iframe>
+  (Session info: chrome=141.0.7390.107)
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.14.0-37-generic', java.version: '11.0.29'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9ac92f90f6ba8cf3abba17e397947787, clickElement {id=f.17905D8675D3C25B355C3D9909E67363.d.4C9B170C2DAE333FB5AC137B480777EF.e.57}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.107, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:35993}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:35993/devtoo..., se:cdpVersion: 141.0.7390.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (9ac92f90f6ba8cf3abba17e397947787)] -> xpath: //button[text()='Signup']]
+Session ID: 9ac92f90f6ba8cf3abba17e397947787
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at ui.base.BasePage.clickWhenReady(BasePage.java:40)
+at ui.pages.LoginPage.clickSignupButton(LoginPage.java:37)
+at ui.tests.RegisterTest.registerUser(RegisterTest.java:25)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:115)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:204)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:107)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:112)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerUser -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ui.tests.RegisterTest@5136d012]" started-at="2026-02-14T07:33:12 GET" name="tearDown" finished-at="2026-02-14T07:33:12 GET" duration-ms="76" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- ui.tests.RegisterTest -->
+      <class name="api.tests.AllProducsTest">
+        <test-method signature="getAllProductsTest()[pri:0, instance:api.tests.AllProducsTest@29e495ff]" started-at="2026-02-14T07:34:54 GET" name="getAllProductsTest" finished-at="2026-02-14T07:34:55 GET" duration-ms="324" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllProductsTest -->
+        <test-method signature="postToALlProductsTest()[pri:0, instance:api.tests.AllProducsTest@29e495ff]" started-at="2026-02-14T07:34:55 GET" name="postToALlProductsTest" finished-at="2026-02-14T07:34:55 GET" duration-ms="260" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postToALlProductsTest -->
+      </class> <!-- api.tests.AllProducsTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
